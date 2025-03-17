@@ -1,5 +1,5 @@
-name: is-a.dev Pull Request Template
-description: A template for submitting pull requests
+name: is-a.dev domain registration
+description: Register a subdomain
 title: 'feat(domains): register '
 body:
   - type: markdown
