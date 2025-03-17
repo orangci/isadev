@@ -1,0 +1,46 @@
+name: is-a.dev Pull Request Template
+description: A template for submitting pull requests
+title: 'feat(domains): register '
+body:
+  - type: markdown
+    attributes:
+      value: |
+        <!--
+        !!!
+        YOU MUST FILL OUT THIS TEMPLATE ENTIRELY FOR YOUR PR TO BE ACCEPTED, IT IS NOT OPTIONAL.
+        IF YOU DO NOT FILL OUT THIS PR TEMPLATE TO ITS ENTIRETY, YOUR PR WILL BE IMMEDIATELY DENIED.
+        !!!
+        -->
+
+  - type: markdown
+    attributes:
+      value: '## Requirements\n<!-- Your domain MUST pass ALL the requirements below, otherwise it WILL BE DENIED. -->'
+
+  - type: checkbox
+    id: requirements
+    attributes:
+      description: 'Please check all that apply:'
+    options:
+      - label: 'I have **read** and **understood** the [Terms of Service](https://is-a.dev/terms).'
+        value: 'terms_read'
+      - label: 'I understand my domain will be removed if I violate the [Terms of Service](https://is-a.dev/terms).'
+        value: 'terms_understood'
+      - label: 'My file is in the `domains` directory and has the `.json` file extension.'
+        value: 'file_location'
+      - label: "My file's name is lowercased and alphanumeric."
+        value: 'file_name'
+      - label: 'My website is **reachable** and **completed**.'
+        value: 'website_reachable'
+      - label: 'I have provided sufficient contact information in the `owner` key.'
+        value: 'contact_info'
+
+  - type: markdown
+    attributes:
+      value: '## Website Preview\n<!-- Provide a link or screenshot of your website below. You MUST complete this step for your PR to be approved. -->'
+
+  - type: input
+    id: website_preview
+    attributes:
+      placeholder: 'Link or screenshot of your website'
+    validations:
+      required: true
